@@ -1,0 +1,205 @@
+#footer{
+    width: 100vw;
+    height: 60vh;
+}
+
+
+/* ------------Footer --1----------- */
+
+.footer1{
+    width: 100vw;
+    margin-top: 4vh;
+    
+}
+
+.footer1-child{
+    display: flex;
+    justify-content: center;
+}
+
+.footer1-child-1{
+    height: 80px;
+    width: 80%;
+    display: flex;
+}
+
+
+.footer1-child-1-1{
+    height: 100%;
+    width: 50%;
+}
+
+.footer1-child-1-2{
+    height: 100%;
+    width: 50%;
+}
+
+.footer1-child-1-1-content-1 img{
+    height: 3vh;
+}
+
+.footer1-child-1-1-content-1 p{
+    font-size: 16px;
+    color: rgb(59, 59, 59);
+    letter-spacing: 0.5px;
+}
+
+.footer1-child-1-1-content-1{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 0.9vw;
+}
+
+
+.footer1-child-1-1-content-2 button{
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+
+.footer1-child-1-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer1-child-1-2-contents-svg img{
+    height: 2.5vh; 
+}
+
+.footer1-child-1-2-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer1-child-1-2-content-1 p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: rgb(62, 62, 62);
+}
+
+
+.footer1-child-1-2{
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer1-child-1-2-content{
+    height: 100%;
+    width: 60%;
+}
+
+
+
+
+/* ------------------Footer-2-------------------------- */
+
+.footer2{
+   
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer2-child{
+    
+    width: 80%;
+    height: 80%;
+    display: flex;
+}
+
+.footer2-child-content-1{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.footer2-child-content-2{
+    width: 80%;  
+}
+
+
+.footer2-child-content-1 img{
+    margin-top: 10%;
+    width: 65%;
+    height: 16%;
+    
+}
+
+
+.footer2-child-content-2-child{ 
+    margin-top: 3%;
+}
+
+.footer2-child-content-2-child{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+}
+
+.footer2-child-content-2-child ul{
+    list-style: none; 
+}
+
+
+.footer2-child-content-2-child ul li {
+    margin-bottom: 5px; 
+    font-size: 12px;
+    color: rgb(75, 75, 75);
+}
+
+
+
+
+.footer2-child-content-2-child ul li:nth-child(1) {
+    letter-spacing: 1px;
+    margin-bottom: 16px; 
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(30, 30, 30);
+}
+
+
+
+
+
+/* ---------------footer-3---------------------
+ */
+
+
+.footer3{
+    display: flex;
+    justify-content: center;
+    height: 13%;
+}
+
+.footer3-content{
+    width: 80%;  
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.footer3-content-child p{
+    color: rgb(149, 149, 149);
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
