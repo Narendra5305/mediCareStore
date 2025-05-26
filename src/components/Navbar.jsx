@@ -58,7 +58,7 @@ function NavBar2(){
 
 
                         <div onClick={()=>navigate("/cart")} className="navbar2-child-3-child-3">
-                            <a href=""  className="navbar2-child-3-child-3-anchor">
+                            <a   className="navbar2-child-3-child-3-anchor">
                                 <img src="https://www.svgrepo.com/show/505321/cart-1.svg" alt="cart-svg" />
                                 <p>Cart</p>
                             </a>

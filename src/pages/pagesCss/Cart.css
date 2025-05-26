@@ -1,0 +1,102 @@
+/* Container */
+.cart-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Title */
+.cart-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Empty cart layout */
+.empty-cart {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.empty-cart-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+  opacity: 0.7;
+  transition: transform 0.3s ease;
+}
+
+.empty-cart-image:hover {
+  transform: scale(1.05);
+}
+
+/* Each cart item */
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Product image */
+.item-image {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Item details */
+.item-details {
+  flex-grow: 1;
+}
+
+.item-details h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+.item-details p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+/* Button group */
+.button-group {
+  margin-top: 10px;
+}
+
+.button-group button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #27ae60;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #219150;
+}
+
+.button-group button:last-child {
+  background-color: #e74c3c;
+}
+
+.button-group button:last-child:hover {
+  background-color: #c0392b;
+}
