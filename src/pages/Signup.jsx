@@ -28,6 +28,7 @@ const SignUp  = () =>{
           const response = await axios.post("https://demstorebackend.onrender.com/users/signup", formData);
           alert("User created successfully!");
           setFormData({ name: "", email: "", password: "", address: "", phone: "", role: "user" });
+          navigate("/signin")
         } catch (error) {
           console.error("Error creating user:", error.response?.data || error.message);
           alert("Failed to create user.");

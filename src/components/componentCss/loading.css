@@ -1,0 +1,13 @@
+#loading{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    
+
+}
+
+#loading img{
+    width: 50px;
+}

@@ -18,6 +18,7 @@ const Signin  = () =>{
         e.preventDefault();
         try {
           const response = await axios.post("https://demstorebackend.onrender.com/users/signin", {email ,password});
+          console.log(response)
           alert("User login successfully!");
           setEmail("")
           setPassword("")
@@ -43,8 +44,7 @@ const Signin  = () =>{
                             <input type="email" placeholder="Enter your email" value={email}  onChange={(e) => setEmail(e.target.value)} required/>
 
                             <label>Password</label>
-                            <input type="text" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-
+                            <input type="password" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)} required />
                             <button type="submit">SIGN IN</button>
 
                             

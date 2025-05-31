@@ -3,6 +3,7 @@ import "../components/componentCss/Carousel.css"
 import { useDispatch , useSelector } from "react-redux";
 import { fetchProduct } from "../redux/slices/productSlice";
 import ProductCard from "../components/ProductCard"
+import { Loading } from "./loading";
 
 
 const Crousel1 = ()=>{
@@ -104,9 +105,17 @@ const Crousel3 =() =>{
           carouselRef.current.scrollBy({ left: 250, behavior: "smooth" });
         }
       };
+
+
     
-    if (loading) return <p>Loading...</p>;
+    if (loading) {
+        return( <Loading />);
+    }
+
+
+
     if (error) return <p>Error fetching data</p>;
+    
 
     return(
         <div className="crousel3">
