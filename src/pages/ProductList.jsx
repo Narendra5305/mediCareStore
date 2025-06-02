@@ -2,6 +2,7 @@ import React , {useEffect, useState} from "react";
 
 import { useParams } from "react-router-dom";
 
+
 import { useDispatch , useSelector } from "react-redux";
 import { fetchProduct } from "../redux/slices/productSlice";
 import ProductCard from "../components/ProductCard"
