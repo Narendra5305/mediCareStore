@@ -8,6 +8,7 @@ import { fetchProduct } from "../redux/slices/productSlice";
 import ProductCard from "../components/ProductCard"
 
 import "./pagesCss/productList.css"
+import { Loading } from "../components/loading";
 
 
 
@@ -51,7 +52,10 @@ const ProductList =() =>{
 
     if (loading){
         return(
-            <h1>Loading......</h1>
+            <div className="load-list">
+                 <Loading />
+            </div>
+           
         )
     }
 

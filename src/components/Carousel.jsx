@@ -109,7 +109,7 @@ const Crousel3 =() =>{
 
     
     if (loading) {
-        return(<div id="loading">
+        return(<div className="loading">
              <Loading />
         </div>);
     }
