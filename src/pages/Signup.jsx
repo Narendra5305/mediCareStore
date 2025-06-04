@@ -3,6 +3,10 @@ import axios from "axios";
 import "./pagesCss/signup.css"
 import { useNavigate } from "react-router";
 
+import mediCareStoreLogo from '../assets/mediCareStoreLogo.png';
+
+
+
 
 const SignUp  = () =>{
 
@@ -43,9 +47,9 @@ const SignUp  = () =>{
                 <div className="signup-child-cont-1">
                     <div className="signup-child-cont-1-child">
 
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Dermstore_logo.svg/1200px-Dermstore_logo.svg.png" alt="image-logo" />
+                        <img src={mediCareStoreLogo} alt="image-logo" />
                         
-                        <h2>Create an account</h2>
+                       
 
                         <form className="signup-form" onSubmit={handleSubmit}>
                             <label >Name</label>

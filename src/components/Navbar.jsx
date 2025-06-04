@@ -2,6 +2,9 @@ import React,{useState} from "react";
 import './componentCss/navbar.css'
 import { useNavigate } from "react-router";
 
+import mediCareStore from '../assets/mediCareStore.gif';
+
+
 
 function NavBar1(){
     return(
@@ -32,7 +35,7 @@ function NavBar2(){
 
 
                 <div onClick={()=>{navigate("/")}} className="navbar2-child-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Dermstore_logo.svg/1200px-Dermstore_logo.svg.png" alt="dermalogo" />
+                    <img src={mediCareStore} alt="dermalogo" />
                 </div>
 
 

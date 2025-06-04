@@ -4,6 +4,9 @@ import "./pagesCss/signin.css"
 import { useNavigate } from "react-router";
 import axios from "axios";
 
+import mediCareStoreLogo from '../assets/mediCareStoreLogo.png';
+
+
 
 
 
@@ -35,9 +38,9 @@ const Signin  = () =>{
                 <div className="signin-child-cont-1">
                     <div className="signin-child-cont-1-child">
                         
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Dermstore_logo.svg/1200px-Dermstore_logo.svg.png" alt="image-logo" />
+                        <img src={mediCareStoreLogo} alt="image-logo" />
                         
-                        <h2>LOGIN HERE</h2>
+                        
 
                         <form className="singin-form" onSubmit={handleSubmit}>
                             <label >Email Address*</label>

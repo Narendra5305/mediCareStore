@@ -1,7 +1,7 @@
 .signin{
     
     width: 100vw;
-    height: 100vh;
+    height: 720px;
 }
 
 .signin-child{
@@ -85,7 +85,7 @@
 .singin-form button{
     margin-top: 50px;
     height: 60px;
-    background-color: black;
+    background-color:  #0086C4;
     color: white;
     border: none;
     border-radius: 5px ;
@@ -97,5 +97,11 @@
     font-weight: 600;
     color: black;
     cursor: pointer;
+   
+}
+
+.signUp-link {
+     margin-top: 30px;
+     cursor: pointer;
 }
 

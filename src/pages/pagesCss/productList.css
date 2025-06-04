@@ -63,8 +63,12 @@
 }
 
 .filter-2-child button{
-    height: 3vh;
+    height: 40px;
     width: 5vw;
+    background-color: #0086C4;
+    color: white;
+    border: none;
+    border-radius: 10px;
 }
 
 .filter-child div{

@@ -1,8 +1,16 @@
 .signup{
    
     width: 100vw;
-    height: 100vh;
+    height: 720px;
+    margin-bottom: 50px;
 }
+
+
+.image-logo{
+    height: 100px;
+    margin-top: 100px;
+}
+
 
 .signup-child{
     
@@ -86,8 +94,8 @@
 
 .signup-form button{
     margin-top: 50px;
-    height: 60px;
-    background-color: black;
+    height: 70px;
+    background-color:  #0086C4;
     color: white;
     border: none;
     border-radius: 5px ;
@@ -99,5 +107,11 @@
     font-weight: 600;
     color: black;
     cursor: pointer;
+}
+
+
+.signup-link{
+    margin-top: 20px;
+    
 }
 

@@ -1,8 +1,15 @@
 import React from "react";
 import "./componentCss/footer.css"
 
+import mediCareStoreLogo from '../assets/mediCareStoreLogo.png';
+
+import { useNavigate } from "react-router";
+
+
 
 function Footer1(){
+    const navigate =useNavigate()
+    
     return(
         <div className="footer1">
             <hr />
@@ -16,7 +23,7 @@ function Footer1(){
                         </div>
 
                         <div className="footer1-child-1-1-content-2">
-                            <button>SIGN ME UP</button>
+                            <button onClick={()=>{navigate("/signup")}}  >SIGN ME UP</button>
                         </div>
                     </div>
 
@@ -81,7 +88,7 @@ function Footer2(){
         <div className="footer2">
             <div className="footer2-child">
                 <div className="footer2-child-content-1">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Dermstore_logo.svg/1200px-Dermstore_logo.svg.png" alt="dermstore-logo" />
+                    <img src={mediCareStoreLogo} alt="dermstore-logo" />
                 </div>
 
 
