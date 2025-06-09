@@ -20,10 +20,8 @@ Technologies Used:
 
 Setup Instructions:
 1. Run `npm install` to install dependencies.
-2. Create a `.env` file with the backend API URL, e.g.:
-   REACT_APP_API_URL=http://localhost:5000
-3. Start the app with `npm start`.
-4. Use the UI to interact with the backend REST API.
+2. Start the app with `npm start`.
+3. Use the UI to interact with the backend REST API.
 
 Note:
 - Ensure the backend server is running and accessible.
