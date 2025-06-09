@@ -21,16 +21,18 @@ const Signin  = () =>{
         e.preventDefault();
         try {
           const response = await axios.post("https://demstorebackend.onrender.com/users/signin", {email ,password});
-          console.log(response)
-          alert("User login successfully!");
+          const token = response.data.token
+          localStorage.setItem("token", token); 
           setEmail("")
           setPassword("")
           navigate("/")
+          alert("User login successfully!");
         } catch (error) {
           console.error("Error signin user:", error.response?.data || error.message);
           alert("Failed to signin user.");
         }
     };
+
 
     return(
         <div className="signin">

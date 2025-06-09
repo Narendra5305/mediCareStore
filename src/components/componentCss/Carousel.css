@@ -1,13 +1,14 @@
 .crousel1 {
-    border: 1px solid red;
+    
     width: 100vw;
-    height: 40vh;
+    height: 250px;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 .crousel1-child {
     width: 100%;
@@ -108,7 +109,7 @@
 
 .crousel2{
     width: 100vw;
-    height: 15vh;
+    height: 200px;
 }
 
 .crousel2{
@@ -138,8 +139,8 @@
 
 /* ----------------crousel-3--------------- */
 .crousel3{
-    height: 60vh;
-    margin-bottom: 80px;
+    height: 500px;
+    margin-bottom: 40px;
     width: 100vw;
     display: flex;
     align-items: center;

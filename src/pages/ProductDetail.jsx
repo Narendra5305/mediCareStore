@@ -37,6 +37,11 @@ const ProductDetail = ()=>{
         setProductDetail(product)
     },[products,id])
 
+    const handleAddToCart =(e) =>{
+        e.preventDefault()
+        addToCart(productDetail[0])
+        alert("this item is added to cart")
+    }
 
 
     if (loading){
@@ -99,7 +104,7 @@ const ProductDetail = ()=>{
                         </div>
                         
                         <div className="add-to-cart">
-                            <button onClick={() => addToCart(productDetail)}>ADD TO CART</button>
+                            <button onClick={ handleAddToCart}>ADD TO CART</button>
                         </div>
                     </div>
                     

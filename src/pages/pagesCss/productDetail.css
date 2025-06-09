@@ -1,7 +1,7 @@
 .productDetail{
     width: 100vw;
    
-    height: 80vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;

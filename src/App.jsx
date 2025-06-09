@@ -33,8 +33,17 @@ function App() {
           <Route path="/product/:filterType/:filterValue" element={<ProductList />} />
           <Route path="/signin" element={<Signin/>}/>
           <Route path="/signup" element={<SignUp/>}/>
-          <Route path="/productDetail/:id" element={<ProductDetail/>}/>
-          <Route path="/cart"  element={<Cart />} />
+          <Route path="/productDetail/:id" 
+          element={ 
+            <PrivateRoute>
+              <ProductDetail />
+            </PrivateRoute>
+          }/>
+          <Route path="/cart"  element={
+             <PrivateRoute>
+              <Cart />
+            </PrivateRoute>
+          } />
         </Routes>
       <Footer/>
     </Router>
