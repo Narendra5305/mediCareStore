@@ -1,12 +1,32 @@
-# React + Vite
+Medicare Store Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview:
+This frontend application is a React-based full-stack e-commerce platform inspired by Dermstore. It provides users with product browsing, secure authentication, cart management, and order placement features.
 
-Currently, two official plugins are available:
+Features:
+- Browse all products with filtering options
+- User signup and login with JWT authentication
+- Manage user profile and order history
+- Cart management with Redux Toolkit for global state
+- Navigation with React Router
+- Admin capabilities for product and user management (admin role required)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used:
+- React.js
+- Redux Toolkit
+- React Router
+- Axios for API requests
+- JWT stored in localStorage for authentication persistence
 
-## Expanding the ESLint configuration
+Setup Instructions:
+1. Run `npm install` to install dependencies.
+2. Create a `.env` file with the backend API URL, e.g.:
+   REACT_APP_API_URL=http://localhost:5000
+3. Start the app with `npm start`.
+4. Use the UI to interact with the backend REST API.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Note:
+- Ensure the backend server is running and accessible.
+- Authentication tokens are stored securely in localStorage.
+
+
