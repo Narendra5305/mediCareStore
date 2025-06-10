@@ -34,7 +34,9 @@ const Cart = () => {
           <p>Your cart is empty</p>
         </div>
       ) : (
+        <>{
         cart.map((item) => (
+          
           <>
             <div className="cart-item" key={item._id}>
               <img src={item.images[0]} alt={item.name} className="item-image" />
@@ -43,22 +45,29 @@ const Cart = () => {
                 <p>Price: $ {item.one_time_price}</p>
                 <p>Quantity: {item.quantity}</p>
                 <div className="button-group">
-                  <button onClick={() => increaseQuantity(item.id)}>+</button>
-                  <button onClick={() => decreaseQuantity(item.id)}>-</button>
-                  <button onClick={() => removeFromCart(item.id)}>Remove</button>
+                  <button onClick={() => increaseQuantity(item._id)}>+</button>
+                  <button onClick={() => decreaseQuantity(item._id)}>-</button>
+                  <button onClick={() => removeFromCart(item._id)}>Remove</button>
                 </div>
               </div>
             </div>
-
-            <div className="cart-total">
-              <h3>Total Price: ${totalPrice.toFixed(2)}</h3>
-            </div>
-            <div className="buy-total">
-                <button onClick={handleBuy}>Buy</button>
-            </div>
           </>
           
-        ))
+          
+        ))}
+
+        
+          <div className="cart-total">
+                <h3>Total Price: ${totalPrice.toFixed(2)}</h3>
+            </div>
+          <div className="buy-total">
+                  <button onClick={handleBuy}>Buy</button>
+          </div>
+        
+        
+        </>
+          
+        
       )
       
       
@@ -69,3 +78,6 @@ const Cart = () => {
 };
 
 export default Cart;
+
+
+ 
