@@ -1,8 +1,13 @@
-import React,{useState} from "react";
+import React,{useState , useRef , useEffect} from "react";
 import './componentCss/navbar.css'
 import { useNavigate } from "react-router";
 
 import mediCareStore from '../assets/mediCareStore.gif';
+import ChatBoat from "./chatBoat";
+
+import chatboatlogo from "../assets/chatboatlogo.png"
+
+
 
 
 
@@ -193,6 +198,46 @@ function  NavBar4(){
 
 
 
+function ChatBar() {
+  const [open, setOpen] = useState(false);
+  const modalRef = useRef(null);
+
+  const handleClickOutside = (e) => {
+    if (modalRef.current && !modalRef.current.contains(e.target)) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (open) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [open]);
+
+  return (
+    <>
+      <button className="chat-toggle" onClick={() => setOpen(!open)}>
+        <img src={chatboatlogo} alt="chatbot" width="50" height="50" />
+      </button>
+
+      {open && (
+        <div className="chat-modal" ref={modalRef}>
+          <ChatBoat />
+        </div>
+      )}
+    </>
+  );
+}
+
+
+
+
+
+
 
 
 
@@ -202,7 +247,8 @@ const NavBar = ()=>{
             <NavBar1/>
             <NavBar2/>
             <NavBar3/>
-            <NavBar4/>
+            <NavBar4/> 
+            <ChatBar/>
         </div>
         
     )
